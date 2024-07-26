@@ -110,7 +110,7 @@ app.post('/uploads', uploads.single("files"), async (req, res) => {
 
     
     const prompt = ""; 
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-pro-vision" });
 
     const imageParts = [bufferToGenerativePart(req.file.buffer, req.file.mimetype)];
 
